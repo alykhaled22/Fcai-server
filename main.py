@@ -75,3 +75,15 @@ def search_by_product(product_name: str):
             place_data["products"] = matched_products
             result.append(place_data)
     return result
+
+# http://127.0.0.1:8000/search_by_category?category=Koshary
+@app.get("/search_by_category")
+def search_by_category(category: str):
+    result = []
+    for place in places:
+        matched_products = [p for p in place.products if category.lower() == p.category.lower()]
+        if matched_products:
+            place_data = place.dict()
+            place_data["products"] = matched_products
+            result.append(place_data)
+    return result
