@@ -19,6 +19,7 @@ class Product(BaseModel):
     name: str
     image: str
     price: float
+    category: str
 
 
 class Place(BaseModel):
@@ -32,27 +33,23 @@ class Place(BaseModel):
 
 places = [
     Place(
-        name="Cafe Aroma",
-        address="123 Street, Cairo",
-        image="https://example.com/aroma.jpg",
-        latitude=30.0444,
-        longitude=31.2357,
+        name="Koshary Sayed Hanafy",
+        address="Hadayq elQubba, Cairo",
+        image="https://i.postimg.cc/63dcdvbr/Whats-App-Image-2025-05-08-at-09-47-25-5bae8787.jpg",
+        latitude=30.0775,
+        longitude=31.2835,
         products=[
-            Product(name="Cappuccino", image="https://example.com/cappuccino.jpg", price=50),
-            Product(name="Croissant", image="https://example.com/croissant.jpg", price=30),
+            Product(name="Small Koshary Box", image="https://i.postimg.cc/cC0mTLPV/Whats-App-Image-2025-05-08-at-09-47-54-aab87256.jpg", price=23.00,category="Koshary"),
+            Product(name="Large Koshary Box", image="https://i.postimg.cc/KvcfM4PT/Whats-App-Image-2025-05-08-at-09-49-49-5aa0ec6b.jpg", price=28.00,category="Koshary"),
+            Product(name="Star Koshary Plus", image="https://i.postimg.cc/KvcfM4PT/Whats-App-Image-2025-05-08-at-09-49-49-5aa0ec6b.jpg", price=38.00,category="Koshary"),
+            Product(name="Meat Casserole", image="https://i.postimg.cc/vHPzLMhN/Whats-App-Image-2025-05-08-at-09-50-07-4c0dd3bc.jpg", price=50.00,category="Casserole"),
+            Product(name="Chicken Casserole", image="https://i.postimg.cc/y8kTL5rY/Whats-App-Image-2025-05-08-at-09-51-12-e3a78676.jpg", price=55.00,category="Casserole"),
+            Product(name="Rice Pudding", image="https://i.postimg.cc/T3FJF9Zj/Whats-App-Image-2025-05-08-at-09-51-44-a553deaa.jpg", price=22.00,category="Pudding"),
+            Product(name="Lotus Rice Pudding", image="https://i.postimg.cc/vmntsnsJ/Whats-App-Image-2025-05-08-at-09-52-00-52aebb30.jpg", price=40.00,category="Pudding"),
+            Product(name="Large Salad", image="https://i.postimg.cc/gjsK7PWr/Whats-App-Image-2025-05-08-at-09-48-19-d3e4a0aa.jpg", price=16.00,category="side"),
+            Product(name="Crispy Toast", image="https://i.postimg.cc/DfP501XF/Whats-App-Image-2025-05-08-at-09-48-51-8b7b384b.jpg", price=10.00,category="side"),
         ]
     ),
-    Place(
-        name="Pizza Corner",
-        address="456 Street, Giza",
-        image="https://example.com/pizza.jpg",
-        latitude=30.0131,
-        longitude=31.2089,
-        products=[
-            Product(name="Margherita", image="https://example.com/margherita.jpg", price=80),
-            Product(name="Pepsi", image="https://example.com/pepsi.jpg", price=10),
-        ]
-    )
 ]
 
 # http://127.0.0.1:8000/places?user_lat=30.05&user_lon=31.25
