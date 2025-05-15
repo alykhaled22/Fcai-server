@@ -42,9 +42,9 @@ places = [
         name="Koshary Sayed Hanafy",
         address="Hadayq elQubba, Cairo",
         image="https://i.postimg.cc/63dcdvbr/Whats-App-Image-2025-05-08-at-09-47-25-5bae8787.jpg",
-        category="Koshary, Pasta, Desserts",
-        latitude=30.0775,
-        longitude=31.2835,
+        category="Koshary, Pasta, Dessert, side",
+        latitude=30.092579, 
+        longitude=31.277597,
         products=[
             Product(
                 name="Small Koshary Box",
@@ -107,8 +107,8 @@ places = [
         address="Hadayq elQubba, Cairo",
         image="https://i.postimg.cc/tJNrHxhq/Whats-App-Image-2025-05-08-at-09-53-50-d99a2a37.jpg",
         category="Shawarma, Chicken",
-        latitude=30.0785,
-        longitude=31.2845,
+        latitude=30.084499,
+        longitude=31.282200,
         products=[
             Product(
                 name="Pomme frites potates sandwich",
@@ -177,8 +177,8 @@ places = [
         address="Hadayq elQubba, Cairo",
         image="https://i.postimg.cc/kGskvZYv/Whats-App-Image-2025-05-08-at-10-07-35-a95538fa.jpg",
         category="Burgers, Fried Chicken, Fast Food",
-        latitude=30.0775,
-        longitude=31.2835,
+        latitude=30.088359,
+        longitude=31.283979,
         products=[
             Product(
                 name="Hamzawi Beef",
