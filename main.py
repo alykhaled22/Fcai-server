@@ -76,6 +76,18 @@ places = [
                 price=55.00,
                 category="Pasta",
             ),
+             Product(
+                name="Meat Shawarma Sandwich",
+                image="https://i.postimg.cc/4x7z6cmY/Whats-App-Image-2025-05-08-at-09-57-43-32536dc0.jpg",
+                price=116.00,
+                category="Shawarma",
+            ),
+            Product(
+                name="Super Syrian Meat Shawarma sandwich",
+                image="https://i.postimg.cc/XqjfdDCW/Whats-App-Image-2025-05-08-at-09-56-11-a8283be6.jpg",
+                price=127.00,
+                category="Shawarma",
+            ),
             Product(
                 name="Rice Pudding",
                 image="https://i.postimg.cc/T3FJF9Zj/Whats-App-Image-2025-05-08-at-09-51-44-a553deaa.jpg",
